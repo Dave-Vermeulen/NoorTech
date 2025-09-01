@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoorTech - Illuminating business through tech</title>
+    <meta name="description" content="Cape Town-based software development company specializing in WhatsApp for Business, cloud architecture, and custom development solutions for SMMEs.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- WhatsApp Business Integration -->
+    <script>
+        function openWhatsApp() {
+            window.open('https://wa.me/27XXXXXXXXX?text=Hi%20NoorTech!%20I%27m%20interested%20in%20your%20services.', '_blank');
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NoorTech</span>
+                <div class="chess-queen">♛</div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="whatsapp-btn" onclick="openWhatsApp()" aria-label="Contact via WhatsApp">
+                    <span class="whatsapp-icon">💬</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="luminous-background"></div>
+        <div class="hero-content">
+            <div class="chess-queen-large">♛</div>
+            <h1 class="hero-title">Illuminating business through tech</h1>
+            <p class="hero-subtitle">Strategic software solutions for Cape Town's growing businesses. From WhatsApp automation to cloud architecture - we guide your digital transformation with integrity and innovation.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Get Started
+                </button>
+                <button class="btn-secondary" onclick="openWhatsApp()">
+                    Chat on WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Strategic Solutions</h2>
+            <div class="services-grid">
+                
+                <article class="service-card" data-service="whatsapp">
+                    <div class="service-icon">💬</div>
+                    <h3>WhatsApp for Business</h3>
+                    <p>Transform your WhatsApp into a complete storefront with automated customer service, catalog management, and secure payment processing.</p>
+                    <div class="service-features">
+                        <span class="feature">Chatbot Integration</span>
+                        <span class="feature">Shopping Catalog</span>
+                        <span class="feature">Payment Gateway</span>
+                    </div>
+                </article>
+
+                <article class="service-card" data-service="onboarding">
+                    <div class="service-icon">📋</div>
+                    <h3>Client Onboarding</h3>
+                    <p>Streamlined digital onboarding solutions that reduce paperwork and accelerate client acquisition for professional services.</p>
+                    <div class="service-features">
+                        <span class="feature">Digital Forms</span>
+                        <span class="feature">Document Management</span>
+                        <span class="feature">Workflow Automation</span>
+                    </div>
+                </article>
+
+                <article class="service-card" data-service="cloud">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Architecture</h3>
+                    <p>Scalable cloud infrastructure designed for growth, with managed hosting and one-click deployment solutions tailored to your business.</p>
+                    <div class="service-features">
+                        <span class="feature">Managed Hosting</span>
+                        <span class="feature">Auto Scaling</span>
+                        <span class="feature">Security First</span>
+                    </div>
+                </article>
+
+                <article class="service-card" data-service="healthcare">
+                    <div class="service-icon">🏥</div>
+                    <h3>Healthcare Solutions</h3>
+                    <p>Transform unstructured healthcare data into actionable insights with custom booking systems and community management tools.</p>
+                    <div class="service-features">
+                        <span class="feature">Data Analytics</span>
+                        <span class="feature">Booking Systems</span>
+                        <span class="feature">Community Tools</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dev Teams Section -->
+    <section class="dev-teams">
+        <div class="container">
+            <h2 class="section-title">Dev Teams for Hire</h2>
+            <p class="section-subtitle">Horizontal scaling, pay-as-you-go development teams</p>
+            
+            <div class="teams-visual">
+                <div class="team-node" data-team="qa">
+                    <div class="node-glow"></div>
+                    <div class="node-content">
+                        <h4>Product Testing</h4>
+                        <span>QA/QC</span>
+                    </div>
+                </div>
+                
+                <div class="team-node" data-team="support">
+                    <div class="node-glow"></div>
+                    <div class="node-content">
+                        <h4>Product Support</h4>
+                        <span>24/7 Maintenance</span>
+                    </div>
+                </div>
+                
+                <div class="team-node" data-team="finops">
+                    <div class="node-glow"></div>
+                    <div class="node-content">
+                        <h4>FinOps</h4>
+                        <span>Cost Optimization</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="teams-description">
+                <p>Our agile development model adapts to your needs. Scale your team horizontally with specialized expertise when you need it, how you need it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment -->
+    <section class="commitment">
+        <div class="container">
+            <h2 class="section-title">Our Commitment to Integrity</h2>
+            <div class="commitment-content">
+                <div class="commitment-text">
+                    <p>At NoorTech, we believe technology should serve humanity with purpose and ethics. Guided by Islamic principles of integrity and excellence, we build solutions that not only drive business growth but contribute positively to our community.</p>
+                    <p>Every line of code we write, every system we architect, reflects our commitment to doing the right thing - for our clients, their customers, and society at large.</p>
+                </div>
+                <div class="luminous-ray"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-section">
+                    <h2>Start Your Digital Transformation</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="whatsapp">WhatsApp for Business</option>
+                                <option value="onboarding">Client Onboarding</option>
+                                <option value="cloud">Cloud Architecture</option>
+                                <option value="healthcare">Healthcare Solutions</option>
+                                <option value="dev-team">Dev Team for Hire</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-alternatives">
+                        <p>Prefer to chat directly?</p>
+                        <button class="whatsapp-contact" onclick="openWhatsApp()">
+                            <span class="whatsapp-icon">💬</span>
+                            WhatsApp Us
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <div class="cape-town-map">
+                        <div class="map-light"></div>
+                        <div class="map-label">Cape Town, South Africa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">NoorTech</span>
+                        <div class="chess-queen">♛</div>
+                    </div>
+                    <p class="footer-slogan">Illuminating business through tech</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">WhatsApp for Business</a>
+                        <a href="#services">Client Onboarding</a>
+                        <a href="#services">Cloud Architecture</a>
+                        <a href="#services">Healthcare Solutions</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#careers">Careers</a>
+                        <a href="#privacy">Privacy Policy</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" onclick="openWhatsApp()" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NoorTech. All rights reserved. Built with integrity in Cape Town.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/compiled/noortech.js" type="text/javascript"></script>
+</body>
+</html>
