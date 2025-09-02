@@ -39,6 +39,12 @@
              :server-port 3449}
 
   :profiles {:dev {:dependencies [[binaryage/devtools "1.0.6"]
-                                  [figwheel-sidecar "0.5.20"]]
-                   :source-paths ["src" "dev"]
-                   :resource-paths ["resources"]}})
+                                [figwheel-sidecar "0.5.20"]]
+                 :source-paths ["src" "dev"]
+                 :resource-paths ["resources"]}
+           :build {:cljsbuild {:builds [{:id "min"
+                                         :source-paths ["src"]
+                                         :compiler {:main noortech.core
+                                                    :output-to "resources/public/js/compiled/noortech.js"
+                                                    :optimizations :advanced
+                                                    :pretty-print false}}]}}})
