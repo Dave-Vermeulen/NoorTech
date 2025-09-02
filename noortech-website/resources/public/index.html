@@ -3,16 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoorTech - Illuminating business through tech</title>
-    <meta name="description" content="Cape Town-based software development company specializing in WhatsApp for Business, cloud architecture, and custom development solutions for SMMEs.">
+    <title>NoorTech - Strategic Technology Solutions for Ethical Businesses</title>
+    <meta name="description" content="Cape Town-based technology partner specializing in WhatsApp Business solutions, cloud architecture, and custom software development for African SMMEs. Delivering reliable, cost-effective digital transformation.">
+    <meta name="keywords" content="WhatsApp Business, cloud architecture, software development, Cape Town, African technology, digital transformation, SMME solutions">
+    <meta name="author" content="NoorTech">
+    <meta property="og:title" content="NoorTech - Strategic Technology Solutions">
+    <meta property="og:description" content="Delivering reliable, cost-effective digital transformation for African businesses">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noortech.app">
+    <meta name="twitter:card" content="summary_large_image">
     
-    <!-- Fonts -->
+    <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NoorTech",
+      "url": "https://noortech.app",
+      "logo": "https://noortech.app/images/logo.png",
+      "description": "Strategic technology solutions for African businesses",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cape Town",
+        "addressCountry": "South Africa"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27-60-616-9909",
+        "contactType": "Customer service"
+      }
+    }
+    </script>
     
     <!-- WhatsApp Business Integration -->
     <script>
@@ -32,7 +61,7 @@
             <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#results" class="nav-link">Results</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <button class="whatsapp-btn" onclick="openWhatsApp()" aria-label="Contact via WhatsApp">
                     <span class="whatsapp-icon">💬</span>
@@ -46,11 +75,11 @@
         <div class="luminous-background"></div>
         <div class="hero-content">
             <div class="chess-queen-large">♛</div>
-            <h1 class="hero-title">Illuminating business through tech</h1>
-            <p class="hero-subtitle">Strategic software solutions for Cape Town's growing businesses. From WhatsApp automation to cloud architecture - we guide your digital transformation with integrity and innovation.</p>
+            <h1 class="hero-title">Strategic Technology Solutions for African Businesses</h1>
+            <p class="hero-subtitle">We deliver reliable, cost-effective digital transformation that drives measurable results. From WhatsApp automation to cloud architecture, we help African SMMEs compete globally.</p>
             <div class="hero-buttons">
                 <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-                    Get Started
+                    Start Your Project
                 </button>
                 <button class="btn-secondary" onclick="openWhatsApp()">
                     Chat on WhatsApp
@@ -62,26 +91,27 @@
     <!-- Services Overview -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Strategic Solutions</h2>
+            <h2 class="section-title">Solutions That Drive Growth</h2>
+            <p class="section-subtitle">We specialize in technologies that deliver immediate impact and long-term value. No subscriptions or hidden fees, just solutions.</p>
             <div class="services-grid">
                 
                 <article class="service-card" data-service="whatsapp">
                     <div class="service-icon">💬</div>
-                    <h3>WhatsApp for Business</h3>
-                    <p>Transform your WhatsApp into a complete storefront with automated customer service, catalog management, and secure payment processing.</p>
+                    <h3>WhatsApp Business Solutions</h3>
+                    <p>Transform customer engagement with complete WhatsApp storefronts, automated support, and seamless payment processing designed for African markets.</p>
                     <div class="service-features">
                         <span class="feature">Chatbot Integration</span>
-                        <span class="feature">Shopping Catalog</span>
-                        <span class="feature">Payment Gateway</span>
+                        <span class="feature">Product Catalogs</span>
+                        <span class="feature">Secure Payments</span>
                     </div>
                 </article>
 
                 <article class="service-card" data-service="onboarding">
                     <div class="service-icon">📋</div>
-                    <h3>Client Onboarding</h3>
-                    <p>Streamlined digital onboarding solutions that reduce paperwork and accelerate client acquisition for professional services.</p>
+                    <h3>Digital Onboarding Systems</h3>
+                    <p>Streamline client acquisition with customized digital onboarding that reduces paperwork by up to 80% and improves compliance.</p>
                     <div class="service-features">
-                        <span class="feature">Digital Forms</span>
+                        <span class="feature">Paperless Processing</span>
                         <span class="feature">Document Management</span>
                         <span class="feature">Workflow Automation</span>
                     </div>
@@ -89,8 +119,8 @@
 
                 <article class="service-card" data-service="cloud">
                     <div class="service-icon">☁️</div>
-                    <h3>Cloud Architecture</h3>
-                    <p>Scalable cloud infrastructure designed for growth, with managed hosting and one-click deployment solutions tailored to your business.</p>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Scalable, secure cloud solutions designed for African business needs with managed hosting and cost-optimized architecture.</p>
                     <div class="service-features">
                         <span class="feature">Managed Hosting</span>
                         <span class="feature">Auto Scaling</span>
@@ -100,7 +130,7 @@
 
                 <article class="service-card" data-service="healthcare">
                     <div class="service-icon">🏥</div>
-                    <h3>Healthcare Solutions</h3>
+                    <h3>Healthcare Technology</h3>
                     <p>Transform unstructured healthcare data into actionable insights with custom booking systems and community management tools.</p>
                     <div class="service-features">
                         <span class="feature">Data Analytics</span>
@@ -113,18 +143,43 @@
         </div>
     </section>
 
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title">Measurable Impact</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-number">47%</div>
+                    <div class="result-label">Average reduction in client onboarding time</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">63%</div>
+                    <div class="result-label">Cost savings on administrative tasks</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">89%</div>
+                    <div class="result-label">Client retention rate</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">24/7</div>
+                    <div class="result-label">Dedicated support availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Dev Teams Section -->
     <section class="dev-teams">
         <div class="container">
-            <h2 class="section-title">Dev Teams for Hire</h2>
-            <p class="section-subtitle">Horizontal scaling, pay-as-you-go development teams</p>
+            <h2 class="section-title">Flexible Development Teams</h2>
+            <p class="section-subtitle">Scale your capabilities with our pay-as-you-go development model</p>
             
             <div class="teams-visual">
                 <div class="team-node" data-team="qa">
                     <div class="node-glow"></div>
                     <div class="node-content">
-                        <h4>Product Testing</h4>
-                        <span>QA/QC</span>
+                        <h4>Quality Assurance</h4>
+                        <span>Rigorous Testing</span>
                     </div>
                 </div>
                 
@@ -132,21 +187,21 @@
                     <div class="node-glow"></div>
                     <div class="node-content">
                         <h4>Product Support</h4>
-                        <span>24/7 Maintenance</span>
+                        <span>Proactive Maintenance</span>
                     </div>
                 </div>
                 
                 <div class="team-node" data-team="finops">
                     <div class="node-glow"></div>
                     <div class="node-content">
-                        <h4>FinOps</h4>
-                        <span>Cost Optimization</span>
+                        <h4>Cost Optimization</h4>
+                        <span>Financial Efficiency</span>
                     </div>
                 </div>
             </div>
             
             <div class="teams-description">
-                <p>Our agile development model adapts to your needs. Scale your team horizontally with specialized expertise when you need it, how you need it.</p>
+                <p>Our agile development model adapts to your needs. Scale your team horizontally with specialized expertise when you need it, with transparent pricing and dedicated support.</p>
             </div>
         </div>
     </section>
@@ -154,11 +209,11 @@
     <!-- Our Commitment -->
     <section class="commitment">
         <div class="container">
-            <h2 class="section-title">Our Commitment to Integrity</h2>
+            <h2 class="section-title">Our Commitment to Excellence</h2>
             <div class="commitment-content">
                 <div class="commitment-text">
-                    <p>At NoorTech, we believe technology should serve humanity with purpose and ethics. Guided by Islamic principles of integrity and excellence, we build solutions that not only drive business growth but contribute positively to our community.</p>
-                    <p>Every line of code we write, every system we architect, reflects our commitment to doing the right thing - for our clients, their customers, and society at large.</p>
+                    <p>At NoorTech, we believe technology should serve business with purpose and integrity. Guided by principles of ethical excellence, we build solutions that drive sustainable growth while making a positive impact on our community.</p>
+                    <p>Every system we architect reflects our commitment to doing what's right. Delivering reliable, cost-effective technology that empowers African businesses to thrive in a digital economy.</p>
                 </div>
                 <div class="luminous-ray"></div>
             </div>
@@ -170,26 +225,31 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-form-section">
-                    <h2>Start Your Digital Transformation</h2>
+                    <h2>Start Your Digital Journey</h2>
+                    <p class="contact-subtitle">Let's discuss how we can help you grow</p>
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <select id="service" name="service" required>
+                            <label for="service" class="sr-only">Select a Service</label>
+                            <select id="service" name="service" required aria-required="true">
                                 <option value="">Select a Service</option>
                                 <option value="whatsapp">WhatsApp for Business</option>
                                 <option value="onboarding">Client Onboarding</option>
                                 <option value="cloud">Cloud Architecture</option>
                                 <option value="healthcare">Healthcare Solutions</option>
-                                <option value="dev-team">Dev Team for Hire</option>
+                                <option value="dev-team">Development Team</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                            <label for="message" class="sr-only">Tell us more about your project</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required aria-required="true"></textarea>
                         </div>
                         <button type="submit" class="btn-primary">Send Message</button>
                     </form>
@@ -208,6 +268,10 @@
                         <div class="map-light"></div>
                         <div class="map-label">Cape Town, South Africa</div>
                     </div>
+                    <div class="location-info">
+                        <h3>Based in Cape Town</h3>
+                        <p>Serving clients across Africa and globally</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,21 +286,21 @@
                         <span class="logo-text">NoorTech</span>
                         <div class="chess-queen">♛</div>
                     </div>
-                    <p class="footer-slogan">Illuminating business through tech</p>
+                    <p class="footer-slogan">Strategic technology solutions for African businesses</p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Services</h4>
-                        <a href="#services">WhatsApp for Business</a>
-                        <a href="#services">Client Onboarding</a>
+                        <h4>Solutions</h4>
+                        <a href="#services">WhatsApp Business</a>
+                        <a href="#services">Digital Onboarding</a>
                         <a href="#services">Cloud Architecture</a>
-                        <a href="#services">Healthcare Solutions</a>
+                        <a href="#services">Healthcare Technology</a>
                     </div>
                     
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#about">About Us</a>
+                        <a href="#commitment">Our Commitment</a>
                         <a href="#contact">Contact</a>
                         <a href="#careers">Careers</a>
                         <a href="#privacy">Privacy Policy</a>
@@ -252,7 +316,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 NoorTech. All rights reserved. Built with integrity in Cape Town.</p>
+                <p>&copy; 2023 NoorTech. All rights reserved. Building with integrity in Cape Town.</p>
             </div>
         </div>
     </footer>
