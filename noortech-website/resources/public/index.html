@@ -3,52 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoorTech - Strategic Technology Solutions for Ethical Businesses</title>
-    <meta name="description" content="Cape Town-based technology partner specializing in WhatsApp Business solutions, cloud architecture, and custom software development for African SMMEs. Delivering reliable, cost-effective digital transformation.">
-    <meta name="keywords" content="WhatsApp Business, cloud architecture, software development, Cape Town, African technology, digital transformation, SMME solutions">
-    <meta name="author" content="NoorTech">
-    <meta property="og:title" content="NoorTech - Strategic Technology Solutions">
-    <meta property="og:description" content="Delivering reliable, cost-effective digital transformation for African businesses">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://noortech.app">
-    <meta name="twitter:card" content="summary_large_image">
+    <title>NoorTech - Healthcare Technology & Digital Solutions</title>
+    <meta name="description" content="Cape Town-based technology partner providing healthcare infrastructure and digital solutions for South African businesses">
+    <meta name="keywords" content="healthcare technology, South Africa, medical devices, digital transformation, Cape Town tech company">
     
-    <!-- Preload critical resources -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Structured data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "NoorTech",
-      "url": "https://noortech.app",
-      "logo": "https://noortech.app/images/logo.png",
-      "description": "Strategic technology solutions for African businesses",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cape Town",
-        "addressCountry": "South Africa"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+27-60-616-9909",
-        "contactType": "Customer service"
-      }
-    }
-    </script>
-    
-    <!-- WhatsApp Business Integration -->
-    <script>
-        function openWhatsApp() {
-            window.open('https://wa.me/27XXXXXXXXX?text=Hi%20NoorTech!%20I%27m%20interested%20in%20your%20services.', '_blank');
-        }
-    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -58,10 +23,16 @@
                 <span class="logo-text">NoorTech</span>
                 <div class="chess-queen">♛</div>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#results" class="nav-link">Results</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#team" class="nav-link">Our Team</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <button class="whatsapp-btn" onclick="openWhatsApp()" aria-label="Contact via WhatsApp">
                     <span class="whatsapp-icon">💬</span>
@@ -75,147 +46,158 @@
         <div class="luminous-background"></div>
         <div class="hero-content">
             <div class="chess-queen-large">♛</div>
-            <h1 class="hero-title">Strategic Technology Solutions for African Businesses</h1>
-            <p class="hero-subtitle">We deliver reliable, cost-effective digital transformation that drives measurable results. From WhatsApp automation to cloud architecture, we help African SMMEs compete globally.</p>
+            <h1 class="hero-title">Healthcare Technology & Digital Solutions</h1>
+            <p class="hero-subtitle">Cape Town-based technology partner providing infrastructure for healthcare and digital transformation for South African businesses</p>
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-                    Start Your Project
-                </button>
-                <button class="btn-secondary" onclick="openWhatsApp()">
-                    Chat on WhatsApp
-                </button>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Overview -->
-    <section id="services" class="services">
+    <!-- Social Proof -->
+    <section class="social-proof">
         <div class="container">
-            <h2 class="section-title">Solutions That Drive Growth</h2>
-            <p class="section-subtitle">We specialize in technologies that deliver immediate impact and long-term value. No subscriptions or hidden fees, just solutions.</p>
-            <div class="services-grid">
-                
-                <article class="service-card" data-service="whatsapp">
-                    <div class="service-icon">💬</div>
-                    <h3>WhatsApp Business Solutions</h3>
-                    <p>Transform customer engagement with complete WhatsApp storefronts, automated support, and seamless payment processing designed for African markets.</p>
-                    <div class="service-features">
-                        <span class="feature">Chatbot Integration</span>
-                        <span class="feature">Product Catalogs</span>
-                        <span class="feature">Secure Payments</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-service="onboarding">
-                    <div class="service-icon">📋</div>
-                    <h3>Digital Onboarding Systems</h3>
-                    <p>Streamline client acquisition with customized digital onboarding that reduces paperwork by up to 80% and improves compliance.</p>
-                    <div class="service-features">
-                        <span class="feature">Paperless Processing</span>
-                        <span class="feature">Document Management</span>
-                        <span class="feature">Workflow Automation</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-service="cloud">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Infrastructure</h3>
-                    <p>Scalable, secure cloud solutions designed for African business needs with managed hosting and cost-optimized architecture.</p>
-                    <div class="service-features">
-                        <span class="feature">Managed Hosting</span>
-                        <span class="feature">Auto Scaling</span>
-                        <span class="feature">Security First</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-service="healthcare">
-                    <div class="service-icon">🏥</div>
-                    <h3>Healthcare Technology</h3>
-                    <p>Transform unstructured healthcare data into actionable insights with custom booking systems and community management tools.</p>
-                    <div class="service-features">
-                        <span class="feature">Data Analytics</span>
-                        <span class="feature">Booking Systems</span>
-                        <span class="feature">Community Tools</span>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section id="results" class="results">
-        <div class="container">
-            <h2 class="section-title">Measurable Impact</h2>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-number">47%</div>
-                    <div class="result-label">Average reduction in client onboarding time</div>
+            <div class="proof-grid">
+                <div class="proof-item">
+                    <div class="proof-number">47%</div>
+                    <div class="proof-label">Faster Compliance</div>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">63%</div>
-                    <div class="result-label">Cost savings on administrative tasks</div>
+                <div class="proof-item">
+                    <div class="proof-number">200+</div>
+                    <div class="proof-label">Devices Connected</div>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">89%</div>
-                    <div class="result-label">Client retention rate</div>
+                <div class="proof-item">
+                    <div class="proof-number">5min</div>
+                    <div class="proof-label">Dashboard Setup</div>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">24/7</div>
-                    <div class="result-label">Dedicated support availability</div>
+                <div class="proof-item">
+                    <div class="proof-number">100%</div>
+                    <div class="proof-label">South African</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dev Teams Section -->
-    <section class="dev-teams">
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
         <div class="container">
-            <h2 class="section-title">Flexible Development Teams</h2>
-            <p class="section-subtitle">Scale your capabilities with our pay-as-you-go development model</p>
+            <h2 class="section-title">Healthcare Technology Solutions</h2>
+            <p class="section-subtitle">Enterprise-grade solutions for the South African healthcare market</p>
             
-            <div class="teams-visual">
-                <div class="team-node" data-team="qa">
-                    <div class="node-glow"></div>
-                    <div class="node-content">
-                        <h4>Quality Assurance</h4>
-                        <span>Rigorous Testing</span>
+            <div class="solutions-grid">
+                <article class="solution-card" data-solution="compass">
+                    <div class="solution-icon">🧭</div>
+                    <h3>NoorCompass</h3>
+                    <p>Regulatory compliance and deployment for medical manufacturers</p>
+                    <div class="solution-features">
+                        <span class="feature">SAHPRA Compliance</span>
+                        <span class="feature">Certified Installation</span>
+                        <span class="feature">Ongoing Support</span>
                     </div>
-                </div>
-                
-                <div class="team-node" data-team="support">
-                    <div class="node-glow"></div>
-                    <div class="node-content">
-                        <h4>Product Support</h4>
-                        <span>Proactive Maintenance</span>
+                    <a href="#contact" class="solution-cta">Get Compliant →</a>
+                </article>
+
+                <article class="solution-card" data-solution="conduit">
+                    <div class="solution-icon">🔌</div>
+                    <h3>NoorConduit</h3>
+                    <p>Unified data platform for healthcare institutions</p>
+                    <div class="solution-features">
+                        <span class="feature">Data Integration</span>
+                        <span class="feature">HL7/FHIR Support</span>
+                        <span class="feature">Secure API</span>
                     </div>
-                </div>
-                
-                <div class="team-node" data-team="finops">
-                    <div class="node-glow"></div>
-                    <div class="node-content">
-                        <h4>Cost Optimization</h4>
-                        <span>Financial Efficiency</span>
+                    <a href="#contact" class="solution-cta">Unify Data →</a>
+                </article>
+
+                <article class="solution-card" data-solution="insight">
+                    <div class="solution-icon">📊</div>
+                    <h3>NoorInsight</h3>
+                    <p>AI-powered operational intelligence</p>
+                    <div class="solution-features">
+                        <span class="feature">Predictive Analytics</span>
+                        <span class="feature">Cost Optimization</span>
+                        <span class="feature">Efficiency Tools</span>
                     </div>
-                </div>
-            </div>
-            
-            <div class="teams-description">
-                <p>Our agile development model adapts to your needs. Scale your team horizontally with specialized expertise when you need it, with transparent pricing and dedicated support.</p>
+                    <a href="#contact" class="solution-cta">Gain Insights →</a>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Our Commitment -->
-    <section class="commitment">
+    <!-- Products Section -->
+    <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title">Our Commitment to Excellence</h2>
-            <div class="commitment-content">
-                <div class="commitment-text">
-                    <p>At NoorTech, we believe technology should serve business with purpose and integrity. Guided by principles of ethical excellence, we build solutions that drive sustainable growth while making a positive impact on our community.</p>
-                    <p>Every system we architect reflects our commitment to doing what's right. Delivering reliable, cost-effective technology that empowers African businesses to thrive in a digital economy.</p>
+            <h2 class="section-title">Ready-to-Use Products</h2>
+            <p class="section-subtitle">Immediate solutions for businesses and developers</p>
+            
+            <div class="products-grid">
+                <article class="product-card" data-product="dashboard">
+                    <div class="product-icon">🚀</div>
+                    <h3>Instant Dashboard Kit</h3>
+                    <p>Professional live demos in 5 minutes. No coding required.</p>
+                    <div class="product-price">$99 conference special</div>
+                    <div class="product-features">
+                        <span class="feature">Real-time Data</span>
+                        <span class="feature">Drag & Drop</span>
+                        <span class="feature">Easy Sharing</span>
+                    </div>
+                    <a href="#contact" class="product-cta">Create Dashboard →</a>
+                </article>
+
+                <article class="product-card" data-product="start">
+                    <div class="product-icon">💼</div>
+                    <h3>NoorStart for SMMEs</h3>
+                    <p>Complete digital foundation for small businesses</p>
+                    <div class="product-features">
+                        <span class="feature">WhatsApp Business</span>
+                        <span class="feature">Website & SEO</span>
+                        <span class="feature">Social Media</span>
+                    </div>
+                    <a href="#contact" class="product-cta">Start Digital →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Capetonian Team</h2>
+            <p class="section-subtitle">Based in Cape Town, serving clients across South Africa</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">🛠️</div>
+                    <h3>Zaytoon Zoutenberg</h3>
+                    <p class="member-role">Tech Lead</p>
+                    <p class="member-contact">+27 71 770 2390</p>
+                    <p class="member-bio">Expert in healthcare technology systems and regulatory compliance</p>
                 </div>
-                <div class="luminous-ray"></div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">📊</div>
+                    <h3>Thaakira Zoutenberg</h3>
+                    <p class="member-role">Data Analyst</p>
+                    <p class="member-contact">+27 XX XXX XXXX</p>
+                    <p class="member-bio">Transforming complex data into actionable insights for healthcare</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">💻</div>
+                    <h3>Dawud Vermeulen</h3>
+                    <p class="member-role">Software Engineer</p>
+                    <p class="member-contact">+27 XX XXX XXXX</p>
+                    <p class="member-bio">Specializing in real-time data systems and API integrations</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">🌐</div>
+                    <h3>Luke Manyamazi</h3>
+                    <p class="member-role">Full Stack Developer</p>
+                    <p class="member-contact">+27 XX XXX XXXX</p>
+                    <p class="member-bio">Building seamless user experiences across web and mobile platforms</p>
+                </div>
             </div>
         </div>
     </section>
@@ -223,55 +205,80 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <h2 class="section-title">Start Your Project</h2>
+            <p class="section-subtitle">Get in touch with our team to discuss your needs</p>
+            
             <div class="contact-grid">
-                <div class="contact-form-section">
-                    <h2>Start Your Digital Journey</h2>
-                    <p class="contact-subtitle">Let's discuss how we can help you grow</p>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Based in Cape Town, serving clients nationally</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>davver911@gmail.com</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Email Address" required aria-required="true">
+                        <div class="contact-method">
+                            <span class="contact-icon">💬</span>
+                            <span>WhatsApp: +27 71 770 2390</span>
                         </div>
-                        <div class="form-group">
-                            <label for="service" class="sr-only">Select a Service</label>
-                            <select id="service" name="service" required aria-required="true">
-                                <option value="">Select a Service</option>
-                                <option value="whatsapp">WhatsApp for Business</option>
-                                <option value="onboarding">Client Onboarding</option>
-                                <option value="cloud">Cloud Architecture</option>
-                                <option value="healthcare">Healthcare Solutions</option>
-                                <option value="dev-team">Development Team</option>
-                            </select>
+                        <div class="contact-method">
+                            <span class="contact-icon">📍</span>
+                            <span>Cape Town, South Africa</span>
                         </div>
-                        <div class="form-group">
-                            <label for="message" class="sr-only">Tell us more about your project</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required aria-required="true"></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
+                    </div>
                     
-                    <div class="contact-alternatives">
-                        <p>Prefer to chat directly?</p>
-                        <button class="whatsapp-contact" onclick="openWhatsApp()">
-                            <span class="whatsapp-icon">💬</span>
-                            WhatsApp Us
-                        </button>
+                    <div class="urgency-banner">
+                        <p>🚀 <strong>Limited availability:</strong> Schedule your consultation this week</p>
                     </div>
                 </div>
-
-                <div class="map-section">
-                    <div class="cape-town-map">
-                        <div class="map-light"></div>
-                        <div class="map-label">Cape Town, South Africa</div>
-                    </div>
-                    <div class="location-info">
-                        <h3>Based in Cape Town</h3>
-                        <p>Serving clients across Africa and globally</p>
-                    </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="mailto:davver911@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="noorcompass">NoorCompass (Regulatory Compliance)</option>
+                                <option value="noorconduit">NoorConduit (Data Integration)</option>
+                                <option value="noorinsight">NoorInsight (Analytics)</option>
+                                <option value="instant-dashboard">Instant Dashboard Kit</option>
+                                <option value="noorstart">NoorStart for SMMEs</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell us about your project</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-preference">Preferred Contact Method</label>
+                            <select id="contact-preference" name="contact-preference">
+                                <option value="">Select an option</option>
+                                <option value="call">Phone Call</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="email">Email</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -286,42 +293,45 @@
                         <span class="logo-text">NoorTech</span>
                         <div class="chess-queen">♛</div>
                     </div>
-                    <p class="footer-slogan">Strategic technology solutions for African businesses</p>
+                    <p class="footer-slogan">Healthcare technology & digital solutions for South Africa</p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Solutions</h4>
-                        <a href="#services">WhatsApp Business</a>
-                        <a href="#services">Digital Onboarding</a>
-                        <a href="#services">Cloud Architecture</a>
-                        <a href="#services">Healthcare Technology</a>
+                        <a href="#solutions">NoorCompass</a>
+                        <a href="#solutions">NoorConduit</a>
+                        <a href="#solutions">NoorInsight</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <a href="#products">Instant Dashboard</a>
+                        <a href="#products">NoorStart</a>
                     </div>
                     
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#commitment">Our Commitment</a>
+                        <a href="#team">Our Team</a>
                         <a href="#contact">Contact</a>
-                        <a href="#careers">Careers</a>
-                        <a href="#privacy">Privacy Policy</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" onclick="openWhatsApp()" class="social-link">WhatsApp</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 NoorTech. All rights reserved. Building with integrity in Cape Town.</p>
+                <p>&copy; 2025 NoorTech. All rights reserved. Building technology solutions in Cape Town.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/compiled/noortech.js" type="text/javascript"></script>
+    
+    <!-- WhatsApp Integration -->
+    <script>
+        function openWhatsApp() {
+            window.open('https://wa.me/27717702390?text=Hi%20NoorTech!%20I%27m%20interested%20in%20your%20services.', '_blank');
+        }
+    </script>
 </body>
 </html>

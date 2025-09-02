@@ -4,12 +4,7 @@
 
 ;; Application State
 (defonce app-state 
-  (r/atom {:form-data {:name ""
-                       :email ""
-                       :service ""
-                       :message ""}
-           :form-submitted false
-           :active-service nil
+  (r/atom {:mobile-menu-open false
            :form-errors {}
            :loading false}))
 
@@ -20,45 +15,34 @@
 
 (defn open-whatsapp []
   (.open js/window 
-         "https://wa.me/27XXXXXXXXX?text=Hi%20NoorTech!%20I%27m%20interested%20in%20your%20services."
+         "https://wa.me/27717702390?text=Hi%20NoorTech!%20I%27m%20interested%20in%20your%20services."
          "_blank"))
 
-;; Form Handling
-(defn handle-input-change [field-key event]
-  (let [value (-> event .-target .-value)]
-    (swap! app-state assoc-in [:form-data field-key] value)
-    ;; Clear error when user starts typing
-    (swap! app-state assoc-in [:form-errors field-key] nil)))
+;; Mobile Menu Toggle
+(defn toggle-mobile-menu []
+  (swap! app-state update :mobile-menu-open not)
+  (let [nav-links (.querySelector js/document ".nav-links")]
+    (if (:mobile-menu-open @app-state)
+      (.add (.-classList nav-links) "active")
+      (.remove (.-classList nav-links) "active"))))
 
+;; Form Validation
 (defn validate-form [form-data]
   (let [errors {}]
     (cond-> errors
-      (empty? (:name form-data)) (assoc :name "Name is required")
-      (empty? (:email form-data)) (assoc :email "Email is required")
-      (not (re-matches #".+@.+\..+" (:email form-data))) (assoc :email "Please enter a valid email")
-      (empty? (:service form-data)) (assoc :service "Please select a service")
-      (empty? (:message form-data)) (assoc :message "Message is required"))))
+      (empty? (.-value (.getElementById js/document "name"))) (assoc :name "Name is required")
+      (empty? (.-value (.getElementById js/document "email"))) (assoc :email "Email is required")
+      (empty? (.-value (.getElementById js/document "interest"))) (assoc :interest "Please select an interest")
+      (empty? (.-value (.getElementById js/document "message"))) (assoc :message "Message is required"))))
 
 (defn handle-form-submit [event]
   (.preventDefault event)
-  (let [form-data (:form-data @app-state)
-        errors (validate-form form-data)]
+  (let [errors (validate-form {})]
     (if (empty? errors)
+      true ; Allow form submission
       (do
-        (swap! app-state assoc :loading true)
-        ;; Simulate API call
-        (js/setTimeout
-          (fn []
-            (.log js/console "Form submission:" (clj->js form-data))
-            (js/alert "Thank you for your message! We'll get back to you within 24 hours.")
-            (swap! app-state assoc :form-submitted true :loading false)
-            (swap! app-state assoc :form-data {:name "" :email "" :service "" :message ""}))
-          1000))
-      (swap! app-state assoc :form-errors errors))))
-
-;; Service Card Interaction
-(defn set-active-service [service-key]
-  (swap! app-state assoc :active-service service-key))
+        (swap! app-state assoc :form-errors errors)
+        false)))) ; Prevent form submission
 
 ;; Enhanced Navigation with Smooth Scrolling
 (defn enhance-navigation []
@@ -69,7 +53,10 @@
           (.preventDefault e)
           (let [href (.getAttribute link "href")
                 target-id (.substring href 1)]
-            (scroll-to-element target-id)))))))
+            (scroll-to-element target-id)
+            ;; Close mobile menu if open
+            (when (:mobile-menu-open @app-state)
+              (toggle-mobile-menu))))))))
 
 ;; Intersection Observer for Navigation Highlighting
 (defn setup-intersection-observer []
@@ -103,23 +90,16 @@
             (.add (.-classList navbar) "scrolled")
             (.remove (.-classList navbar) "scrolled")))))))
 
-;; Service Card Hover Effects
-(defn setup-service-interactions []
-  (let [service-cards (.querySelectorAll js/document ".service-card")]
-    (doseq [card (array-seq service-cards)]
-      (.addEventListener card "mouseenter"
-        (fn []
-          (let [service-type (.getAttribute card "data-service")]
-            (set-active-service service-type))))
-      (.addEventListener card "mouseleave"
-        (fn []
-          (set-active-service nil))))))
-
 ;; Contact Form Enhancement
 (defn setup-form-enhancements []
-  (let [form (.getElementById js/document "contactForm")]
+  (let [form (.querySelector js/document ".contact-form")]
     (when form
       (.addEventListener form "submit" handle-form-submit))))
+
+;; Mobile menu toggle
+(defn setup-mobile-menu []
+  (when-let [toggle (.querySelector js/document ".mobile-menu-toggle")]
+    (.addEventListener toggle "click" toggle-mobile-menu)))
 
 ;; Performance optimization - lazy load images
 (defn lazy-load-images []
@@ -141,13 +121,14 @@
   (enhance-navigation)
   (setup-intersection-observer)
   (setup-scroll-effects)
-  (setup-service-interactions)
   (setup-form-enhancements)
+  (setup-mobile-menu)
   (lazy-load-images)
   
   ;; Log initialization
-  (.log js/console "NoorTech website initialized - Strategic technology solutions for African businesses"))
+  (.log js/console "NoorTech website initialized - Healthcare technology & digital solutions"))
 
+;; Figwheel reload hook
 (defn on-js-reload []
   (.log js/console "Figwheel reload - NoorTech development mode"))
 
