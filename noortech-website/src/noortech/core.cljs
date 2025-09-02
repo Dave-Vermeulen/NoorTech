@@ -148,7 +148,6 @@
   ;; Log initialization
   (.log js/console "NoorTech website initialized - Strategic technology solutions for African businesses"))
 
-;; Figwheel reload hook
 (defn on-js-reload []
   (.log js/console "Figwheel reload - NoorTech development mode"))
 
